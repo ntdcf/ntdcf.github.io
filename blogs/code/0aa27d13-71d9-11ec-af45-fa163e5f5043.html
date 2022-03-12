@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React 组件之间传递参数 Props | 奶糖蛋炒饭</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.f81279c5.css" as="style"><link rel="preload" href="/assets/js/app.13871cfa.js" as="script"><link rel="preload" href="/assets/js/3.53f06fb9.js" as="script"><link rel="preload" href="/assets/js/1.b15b7980.js" as="script"><link rel="preload" href="/assets/js/11.1693fa9d.js" as="script"><link rel="prefetch" href="/assets/js/10.41b2bf91.js"><link rel="prefetch" href="/assets/js/12.ea45a634.js"><link rel="prefetch" href="/assets/js/13.210d2265.js"><link rel="prefetch" href="/assets/js/14.bbe53974.js"><link rel="prefetch" href="/assets/js/15.0db5b3f7.js"><link rel="prefetch" href="/assets/js/16.0cca684a.js"><link rel="prefetch" href="/assets/js/4.3c64d982.js"><link rel="prefetch" href="/assets/js/5.6734fa6b.js"><link rel="prefetch" href="/assets/js/6.0da9865c.js"><link rel="prefetch" href="/assets/js/7.d5950c53.js"><link rel="prefetch" href="/assets/js/8.7a31c5ae.js"><link rel="prefetch" href="/assets/js/9.64326940.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f81279c5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>奶糖蛋炒饭</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2></p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>奶糖蛋炒饭</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/cat.png" alt="奶糖蛋炒饭" class="logo"> <span class="site-name">奶糖蛋炒饭</span></a> <div class="links"><!----> <!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/categories/code/" class="nav-link"><i class="iconfont reco-blog"></i>
+  代码
+</a></div><div class="nav-item"><a href="/categories/game/" class="nav-link"><i class="iconfont reco-other"></i>
+  游戏
+</a></div><div class="nav-item"><a href="/categories/book/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  读书
+</a></div><div class="nav-item"><a href="/categories/other/" class="nav-link"><i class="iconfont reco-document"></i>
+  杂谈
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时光机
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/images/cat.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    奶糖蛋炒饭
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>6</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>5</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/categories/code/" class="nav-link"><i class="iconfont reco-blog"></i>
+  代码
+</a></div><div class="nav-item"><a href="/categories/game/" class="nav-link"><i class="iconfont reco-other"></i>
+  游戏
+</a></div><div class="nav-item"><a href="/categories/book/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  读书
+</a></div><div class="nav-item"><a href="/categories/other/" class="nav-link"><i class="iconfont reco-document"></i>
+  杂谈
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时光机
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>React 组件之间传递参数 Props</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>奶糖蛋炒饭</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">React 组件之间传递参数 Props</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>奶糖蛋炒饭</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>1/11/2020</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>react</span><span class="tag-item" data-v-f875f3fc>前端</span><span class="tag-item" data-v-f875f3fc>javascript</span></i></div></div> <div class="theme-reco-content content__default"><p>React 的组件可以放入其他组件中去，有的时候，需要根据不同的调用显示不同的效果。这个时候，就需要向这个组件中传入参数。React 中提供了 <code>props</code> 可以传递参数。<code>props</code> 是传递进来的参数，是不可变得，在使用中，只能通过 <code>props</code> 的值去判断要显示什么样的结果，不能通过和用户交互。如果需要通过和用户的交互进行判断或者使用参数，则应该使用 state。
+</p> <p>在 React 源码中，<code>prop</code>s 是这样定义的：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>readonly props<span class="token operator">:</span> Readonly<span class="token operator">&lt;</span><span class="token constant">P</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span> Readonly<span class="token operator">&lt;</span><span class="token punctuation">{</span> children<span class="token operator">?</span><span class="token operator">:</span> ReactNode <span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+</code></pre></div><p>所以在组件中使用 props 变量也是 <code>Component</code> 父类中的变量。使用的时候是，<code>this.props</code> 的参数内容。比如想要定义一个参数名为text。使用的时候就是：<code>this.props.text</code>，下面的组件就使用 <code>text</code> 参数显示传入参数的内容：</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">class</span> <span class="token class-name">Hello</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>text<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这样，在使用这个组件的时候，只要在标签中，给参数赋值就好了：</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">this is App</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        &lt;Hello text= &quot;this is use props&quot; /&gt;
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre></div><p>这样就可以在页面上看到下面的部分，是 <code>h1</code> 标签中传入的变量值。效果如下：</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.13871cfa.js" defer></script><script src="/assets/js/3.53f06fb9.js" defer></script><script src="/assets/js/1.b15b7980.js" defer></script><script src="/assets/js/11.1693fa9d.js" defer></script>
+  </body>
+</html>
